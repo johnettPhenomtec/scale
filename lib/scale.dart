@@ -1,12 +1,11 @@
 library scale;
 
-import 'dart:ui';
 import 'package:flutter/widgets.dart';
 
 /// A class to help you scale your design on bigger or smaller screens to achieve the same design look.
 class Scale {
-  static Size size;
-  static Size _deviceScreenSize;
+  static late Size size;
+  static late Size _deviceScreenSize;
 
   static num get _horizontallyScaleFactor {
     return _deviceScreenSize.width / size.width;
